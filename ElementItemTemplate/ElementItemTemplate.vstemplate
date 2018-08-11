@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>HTML элемент</Name>
+    <Description>Класс, наследуемый от Element&lt;BotContext&gt;, который представляет HTML элемент на странице</Description>
+    <Icon>test-icon.png</Icon>
+    <TemplateID>6e2b14da-c896-4b50-97a3-1bbb5e0a69d6</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>1001</SortOrder>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>MyElement.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true" ItemType="Compile">MyElement.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,9 @@
+﻿{
+  "profiles": {
+    "Start": {
+      "commandName": "Executable",
+      "executablePath": "$coderunnerpath$",
+      "commandLineArgs": "$instanceport$ \"$projectdllpath$\" external -sp \"$zennocachepath$\""
+    }
+  }
+}

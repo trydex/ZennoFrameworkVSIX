@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Коллекция HTML элементов</Name>
+    <Description>Класс, наследуемый от ElementCollection&lt;TElement&gt;, который представляет коллекцию элементов</Description>
+    <Icon>ElementCollectionItemTemplate.ico</Icon>
+    <TemplateID>af12231d-88ab-47de-a7fb-eca5470d2a5d</TemplateID>
+    <SortOrder>1002</SortOrder>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>MyElementCollection.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true" ItemType="Compile">MyElementCollection.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

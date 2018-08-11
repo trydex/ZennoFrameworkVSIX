@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Проект ZennoFramework</Name>
+    <Description>Стартовый проект ZennoFramework</Description>
+    <Icon>project-icon.png</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1</SortOrder>
+    <TemplateID>02e22dd7-3684-48a4-a68a-0565e4151d0c</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ZennoFrameworkProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">CodeGenerator.tt</ProjectItem>
+      <ProjectItem ReplaceParameters="true">CodeGenerator.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\launchSettings.json">launchSettings.json</ProjectItem>
+      <Folder Name="Pages">
+        <Folder Name="LoginPage">
+          <ProjectItem ReplaceParameters="true">LoginPage.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="XPaths"></Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Wizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=13f6ac77e15cd80e</Assembly>
+    <FullClassName>Wizard.Wizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

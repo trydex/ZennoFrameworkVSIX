@@ -1,0 +1,8 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="D:\Dev\ZennoFramework\ZennoFramework.Generation\bin\Debug\ZennoFramework.Xml.dll"  #>
+<#@ import namespace="ZennoFramework.Xml" #>
+<#
+        var generator = new Generator("$serialkey$");
+        return generator.GenerateElements(
+            @"D:\Dev\ZennoFramework\ZennoFramework.Generation.Tests\SiteData\Elements.xml", "MyBot");
+#>

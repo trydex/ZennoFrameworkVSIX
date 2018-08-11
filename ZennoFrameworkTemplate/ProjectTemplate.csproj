@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>$externalassembliespath$</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\LoginPage\LoginPage.cs"/>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  $if$ ($includecodegenerator$ == true)
+  <ItemGroup>
+    <None Include="CodeGenerator.tt" />
+    <Compile Include="CodeGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CodeGenerator.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CodeGenerator.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="CodeGenerator.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CodeGenerator.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  $endif$
+  <ItemGroup>
+    <Folder Include="XPaths\" />
+  </ItemGroup>  
+  <ItemGroup>
+    <Reference Include="ZennoLab.InterfacesLibrary">
+      <HintPath>$interfaceslibrarydllpath$</HintPath>
+    </Reference>
+    <Reference Include="ZennoLab.CommandCenter">
+      <HintPath>$commandcenterdllpath$</HintPath>
+    </Reference>
+    <Reference Include="ZennoLab.Emulation">
+      <HintPath>$emulationllpath$</HintPath>
+    </Reference>
+    <PackageReference Include="ZennoFramework" Version="*" />
+  </ItemGroup>
+ </Project>

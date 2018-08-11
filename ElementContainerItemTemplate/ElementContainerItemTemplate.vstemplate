@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Контейнер</Name>
+    <Description>Класс, наследуемый от ElementContainer&lt;BotContext&gt;, который представляет контейнер элементов</Description>
+    <Icon>ElementContainerItemTemplate.ico</Icon>
+    <TemplateID>8b165130-005e-4b15-aeee-014e06156448</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>1003</SortOrder>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>MyContainer.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true" ItemType="Compile">MyContainer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
